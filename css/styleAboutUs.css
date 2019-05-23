@@ -1,0 +1,437 @@
+/* Global */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap');
+
+@keyframes appear1 {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    100% {
+        transform: rotate(0);
+        opacity: 1;
+    }
+}
+
+@keyframes appear2 {
+    0% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 0;
+    }
+
+    100% {
+        transform: rotate(0);
+        opacity: 1;
+    }
+}
+
+@keyframes appear3 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+.fullpage {
+    background-image: url(../images/background3.png);
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    /* height: 800px; */
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    background: black;
+}
+
+a {
+    font-size: 20px;
+}
+
+
+/* Landing */
+
+.landing {
+    height: 100vh;
+    width: 100%;
+    min-height: 600px;
+}
+
+.nav {
+    padding-top: 0.5em;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.08);
+    padding-bottom: 0.5em;
+    padding-right: 8px;
+    filter: drop-shadow(3px 7px 5px #000);
+}
+
+.contactUs>p {
+    font-weight: 300;
+}
+
+.pages {
+    float: right;
+    text-align: right;
+    margin-right: 25px;
+}
+
+#specific {
+    font-weight: 100;
+    font-size: 0.75em;
+}
+
+.nav>a {
+    text-decoration: none;
+    color: white;
+    margin-left: 25px;
+    vertical-align: middle;
+    font-weight: 600;
+    font-size: 1.6em;
+    color: #00FFD0;
+    text-transform: uppercase;
+}
+
+.pages a {
+    line-height: 28px;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    margin-left: 25px;
+    vertical-align: middle;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+.landingWrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.landingContent {
+    margin: 158px auto0 auto;
+    display: flex;
+    width: 1200px;
+    flex-direction: row;
+    justify-content: baseline;
+    align-content: space-between;
+}
+
+.contentLeft {
+    margin-top: 15px;
+    color: white;
+    width: 50%;
+    text-align: center;
+    padding: 20px;
+}
+
+.contentLeft img {
+    width: 100%;
+    animation: appear2 3s 1 0s ease;
+}
+
+.contentRight {
+    margin-top: 80px;
+    color: white;
+    width: 50%;
+    align-self: center;
+    text-align: justify;
+    padding: 20px;
+    animation: appear2 3s 1 0s ease;
+}
+
+.contentLeft h1 {
+    text-align: left;
+    width: 200px;
+    font-size: 35px;
+    padding-bottom: 15px;
+    font-weight: 500;
+    animation: appear1 3s 1 0s ease;
+}
+
+.contentLeft h1:after {
+    content: "";
+    display: block;
+    /* margin: auto; */
+    width: 40%;
+    padding-top: 10px;
+    border-bottom: 2px solid #00FFD0;
+}
+
+.contentRight p {
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+
+/* Footer */
+
+.footer {
+    color: white;
+    height: 100px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contactUs {
+    text-align: right;
+    padding-right: 40px;
+    width: 30%;
+}
+
+.links {
+    text-align: left;
+    width: 30%;
+    color: white;
+    padding-left: 40px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.copyright {
+    text-align: center;
+    width: 30%;
+}
+
+.fab {
+    color: white;
+    text-decoration: none;
+}
+
+i {
+    font-size: 25px;
+    padding-right: 15px;
+}
+
+.contactUs h1 {
+    text-align: right;
+    font-size: 20px;
+}
+
+.mobile {
+    display: none;
+}
+
+.close {
+    display: none;
+}
+
+@keyframes slidedown {
+    0% {
+        transform: translateX(0) translateY(-30px);
+    }
+
+    100% {
+        transform: translateX(0) translateY(0px);
+    }
+}
+
+#overlay {
+    transition: 1s;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    z-index: 20;
+    position: absolute;
+    background-color: black;
+    animation: appear3 1s 1 0s ease-in-out;
+}
+
+#overlay a {
+    letter-spacing: 1px;
+    color: white;
+    font-weight: 300;
+
+}
+
+#overlay a:not(:first-child):after {
+    content: "";
+    display: block;
+    margin: auto;
+    width: 12%;
+    padding-top: 10px;
+    border-bottom: 2px solid #00FFD0;
+}
+
+#overlay a:not(:first-child) {
+    width: 100%;
+    display: block;
+    margin: 100px 0 0 0;
+    animation: slidedown 1s 1 0s ease-out;
+}
+
+#overlay a:first-child {
+    font-size: 30px;
+    float: right;
+    margin: 15px 5% 0 0;
+}
+
+#overlay a:hover {
+    opacity: 0.5;
+}
+
+#contact2 {
+    display: none;
+}
+
+/* RESPONSIVEEEE */
+@media(max-width:600px) {
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+        margin-right: -20px;
+    }
+
+    .content {
+        width: 300px;
+        height: 300px;
+        background-size: contain;
+    }
+
+    .heading1 {
+        font-size: 41px;
+    }
+
+    .heading2 {
+        font-size: 20px;
+    }
+
+    .contentTitle h1 {
+        font-size: 25px;
+    }
+
+    .icons {
+        margin: 0 auto;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .organizersIcon {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .organizersImage {
+        height: 150px;
+        width: 150px;
+    }
+
+    .organizersName p {
+        width: 70%;
+        font-size: 14px;
+        margin: auto
+    }
+
+
+    .fa-instagram,
+    .fa-facebook-square {
+        font-size: 15px;
+    }
+
+    .copyright {
+        font-size: 10px;
+    }
+
+    .contactUs h1 {
+        font-size: 15px;
+    }
+
+    .contactUs p {
+        font-size: 10px;
+    }
+
+    .links {
+        width: 5%;
+        padding-left: 10px;
+    }
+
+
+    #contact2 {
+        display: block;
+    }
+
+    #contact1 {
+        display: none;
+    }
+
+    .contactUs {
+        text-align: right;
+        width: 40%;
+        padding-right: 10px;
+    }
+
+    .landingContent {
+        flex-direction: column;
+    }
+
+    .contentLeft {
+        width: 90%;
+    }
+
+    .contentLeft h1 {
+        font-size: 25px;
+    }
+
+    .contentLeft img {
+        margin-top: 10px;
+    }
+
+    .contentRight {
+        width: 80%;
+        margin-top: -10px;
+    }
+
+    .contentRight p {
+        font-size: 15px;
+    }
+
+    .section {
+        height: 910px;
+    }
+
+    .contentLeft h1:after {
+        width: 30%;
+
+    }
+}
