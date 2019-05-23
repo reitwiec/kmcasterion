@@ -217,6 +217,7 @@ a {
     margin-left: 25px;
     vertical-align: middle;
     font-weight: 300;
+    transition: 0.5s;
     letter-spacing: 0.5px;
 }
 
@@ -280,6 +281,10 @@ a {
     animation: dance 2s infinite 0s ease-out,
         appear4 3s 1 0s ease-in-out;
     ;
+}
+
+.desktop>a:hover {
+    font-size: 20px;
 }
 
 .btn:hover {

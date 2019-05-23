@@ -17,6 +17,15 @@
     }
 }
 
+.desktop>a:hover {
+    font-size: 20px;
+}
+
+.desktop>a {
+    transition: 0.5s;
+}
+
+
 @keyframes appear3 {
     0% {
         opacity: 0;
