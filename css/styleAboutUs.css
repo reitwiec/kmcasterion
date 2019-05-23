@@ -316,6 +316,17 @@ i {
     display: none;
 }
 
+#mediap {
+    margin-left: -140px;
+    text-align: center;
+    /* background: red; */
+    width: 120px
+}
+
+#mediap img {
+    width: 80px;
+}
+
 /* RESPONSIVEEEE */
 @media(max-width:600px) {
 
@@ -442,4 +453,21 @@ i {
         width: 30%;
 
     }
+
+    #mediap {
+        margin-left: 0px;
+        margin-right: 10px;
+        text-align: center;
+        /* background: red; */
+        width: 80px
+    }
+
+    #mediap img {
+        width: 50px;
+    }
+
+    #mediap span {
+        font-size: 10px;
+    }
+
 }

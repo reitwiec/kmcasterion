@@ -19,6 +19,7 @@
 .desktop>a:hover {
     font-size: 20px;
 }
+
 .desktop>a {
     transition: 0.5s;
 }
@@ -472,6 +473,17 @@ i {
     display: none;
 }
 
+#mediap {
+    margin-left: -140px;
+    text-align: center;
+    /* background: red; */
+    width: 120px
+}
+
+#mediap img {
+    width: 80px;
+}
+
 /* RESPONSIVEEEE */
 @media(max-width:600px) {
 
@@ -556,4 +568,21 @@ i {
         cursor: pointer;
         opacity: 1;
     }
+
+    #mediap {
+        margin-left: 0px;
+        margin-right: 10px;
+        text-align: center;
+        /* background: red; */
+        width: 80px
+    }
+
+    #mediap img {
+        width: 50px;
+    }
+
+    #mediap span {
+        font-size: 10px;
+    }
+
 }

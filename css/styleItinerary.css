@@ -290,6 +290,16 @@ button:hover {
     height: 1000px;
 }
 
+#mediap {
+    margin-left: -140px;
+    text-align: center;
+    /* background: red; */
+    width: 120px
+}
+
+#mediap img {
+    width: 80px;
+}
 
 
 /* Footer */
@@ -476,6 +486,22 @@ i {
 
     .tg #seccol {
         padding-right: 100px;
+    }
+
+    #mediap {
+        margin-left: 0px;
+        margin-right: 10px;
+        text-align: center;
+        /* background: red; */
+        width: 80px
+    }
+
+    #mediap img {
+        width: 50px;
+    }
+
+    #mediap span {
+        font-size: 10px;
     }
 
 }
