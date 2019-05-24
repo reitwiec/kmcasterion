@@ -18,6 +18,7 @@
 }
 
 #gform {
+    animation: appear4 3s 1 0s ease;
     margin-top: 15px;
 }
 
