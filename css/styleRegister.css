@@ -25,16 +25,16 @@
 #gform a {
     letter-spacing: 1px;
     padding-bottom: 1.5px;
-    transition: 0.5s;
+    /* transition: 0.5s; */
     font-size: 16px;
     color: white;
     font-weight: 500;
     border-bottom: 1px solid white;
+    opacity: 0.65;
 }
 
 #gform a:hover {
-    color: #00FFD0;
-    border-bottom: 1px solid #00FFD0;
+    opacity: 1;
 }
 
 
@@ -310,8 +310,9 @@ button {
     text-transform: uppercase;
     border: 1px solid white;
     background: transparent;
-    transition: 0.5s;
+    /* transition: 0.5s; */
     text-decoration: none;
+    opacity: 0.65;
 }
 
 sup {
@@ -332,7 +333,7 @@ button>a {
 
 button:hover {
     cursor: pointer;
-    background: rgba(255, 255, 255, 0.08)
+    opacity: 1;
 }
 
 
@@ -630,6 +631,12 @@ i {
         font-size: 10px;
     }
 
+    button {
+        opacity: 1;
+    }
 
+    #gform a {
+        opacity: 1;
+    }
 
 }
