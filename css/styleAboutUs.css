@@ -338,6 +338,7 @@ i {
     width: 560px;
     margin: 0 auto;
     animation: appear2 3s 1 0s ease;
+
 }
 
 .carousel-item {
@@ -610,5 +611,9 @@ i {
 
     .arrow {
         padding: 7px;
+    }
+
+    .carousel-wrapper {
+        margin-top: 20px;
     }
 }
