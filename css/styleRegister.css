@@ -308,12 +308,12 @@ button {
     color: white;
     font-weight: 500;
     text-transform: uppercase;
-    /* border: 1px solid white; */
-    background: #fa3443;
+    border: 1px solid white;
+    background: transparent;
     /* transition: 0.5s; */
     text-decoration: none;
-    /* opacity: 0.65; */
-    cursor: not-allowed;
+    opacity: 0.65;
+    /* cursor: not-allowed; */
 
 }
 
@@ -331,13 +331,13 @@ button>a {
     color: white;
     text-decoration: none;
     font-size: 15px;
-    cursor: not-allowed;
+    /* cursor: not-allowed; */
 }
 
-/* button:hover {
+button:hover {
     cursor: pointer;
     opacity: 1;
-} */
+}
 
 
 .dets1>h1:after {
